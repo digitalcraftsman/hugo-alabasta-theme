@@ -5,7 +5,9 @@
 				{{ with .Site.Params.sidebar.logo -}}
 					<img class="logo" src="{{ $.Site.BaseURL }}{{ . }}" alt="Logo"/>
 				{{- end }}
+				{{ with .Site.Params.name -}}
 				<h1 class="logo logo-name">{{ .Site.Params.name }}</h1>
+				{{- end }}
 			</a>
 		</p>
 		
@@ -20,4 +22,3 @@
 	</div>
 </div>
 <div class="clearer"></div>
-</div>
